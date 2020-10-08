@@ -1,0 +1,27 @@
+import javax.swing.JOptionPane;
+public class SwingGuis
+{
+    public static void main(String[] args)
+    {
+    double meepmorp;
+    int dungl;
+    double yoursh;
+    String meepmorpString;
+    String dunglString;
+    String yourshString;
+    
+    meepmorpString =  JOptionPane.showInputDialog("How many meepmorps fit into hhhhhhhh");
+    meepmorp = Double.parseDouble(meepmorpString);
+    
+    dunglString = JOptionPane.showInputDialog("If you had one meepmorp, "
+    + "how many dungls do you want?");
+    dungl = Integer.parseInt(dunglString);
+    
+    yoursh = dungl * meepmorp;
+    
+    JOptionPane.showMessageDialog(null, "A yoursh is a dungl*meepmorp so " 
+    + "you have this many yourshs:" + yoursh);
+
+    System.exit(0);
+    }
+}
